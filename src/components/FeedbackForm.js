@@ -32,7 +32,6 @@ const FeedbackForm = () => {
       setMessage(null)
       setBtnDisabled(false)
     }
-
     setText(e.target.value)
   }
 
@@ -49,7 +48,7 @@ const FeedbackForm = () => {
       } else {
         addFeedback(newFeedback)
       }
-
+      setBtnDisabled(true)
       setText('')
     }
   }
